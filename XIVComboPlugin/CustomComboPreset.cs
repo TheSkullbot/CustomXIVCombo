@@ -375,6 +375,11 @@ public enum CustomComboPreset
   #endregion
   // ====================================================================================
   #region RED MAGE
+  [IconsCombo([RDM.Verstone, RDM.Verfire, UTL.ArrowLeft, RDM.Veraero3, RDM.Verthunder3, UTL.ArrowLeft, RDM.Jolt, UTL.Blank])]
+  [SectionCombo("One button combo")]
+  [CustomComboInfo("Better Verstone/Verfire Feature", "Replace Verstone/Verfire by either Verthunder/Veraero 3 or Jolt depending on active buffs.", RDM.JobID)]
+  RedMageVerprocFeatureSkull = 3503,
+  
   [IconsCombo([RDM.Verstone, RDM.Verfire, UTL.ArrowLeft, RDM.Jolt, UTL.Blank, RDM.Buffs.VerstoneReady, RDM.Buffs.VerfireReady, UTL.Cross])]
   [SectionCombo("Single Target")]
   [CustomComboInfo("Verstone/Verfire Feature", "Replace Verstone/Verfire with Jolt when no proc is available.", RDM.JobID)]

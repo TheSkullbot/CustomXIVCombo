@@ -159,3 +159,35 @@ internal class RedMageVerstoneVerfire : CustomCombo
     return actionID;
   }
 }
+
+internal class RedMageVerstoneVerfireSkull: CustomCombo
+{
+  protected internal override CustomComboPreset Preset { get; } = CustomComboPreset.RedMageVerprocFeatureSkull;
+
+  protected override uint Invoke(uint actionID, uint lastComboMove, float comboTime, byte level)
+  {
+    if (actionID == RDM.Verstone)
+    {
+      if(HasEffect(RDM.Buffs.VerstoneReady) && !HasEffect(RDM.Buffs.LostChainspell))
+        return OriginalHook(RDM.Verstone);
+      
+      if (HasEffect(RDM.Buffs.VerstoneReady) && HasEffect(RDM.Buffs.LostChainspell))
+        return OriginalHook(RDM.Verthunder3);
+      
+      return OriginalHook(RDM.Jolt);
+    }
+
+    if (actionID == RDM.Verfire)
+    {
+      if (HasEffect(RDM.Buffs.VerfireReady) && !HasEffect(RDM.Buffs.LostChainspell))
+        return OriginalHook(RDM.Verfire);
+      
+      if (HasEffect(RDM.Buffs.VerfireReady) && HasEffect(RDM.Buffs.LostChainspell))
+        return OriginalHook(RDM.Veraero3);
+      
+      return OriginalHook(RDM.Jolt);
+    }
+    
+    return actionID;
+  }
+}
