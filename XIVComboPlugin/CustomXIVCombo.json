@@ -1,8 +1,8 @@
 {
   "Name": "XIV Combo",
-  "Author": "Attick, daemitus, maintained by Khayle",
+  "Author": "Attick, daemitus, maintained by Khayle, fork by Skullbot",
   "Description": "This plugin condenses combos and mutually exclusive abilities onto a single button. /pcombo to open menu",
-  "RepoUrl": "https://github.com/MKhayle/XivComboPlugin",
+  "RepoUrl": "https://github.com/TheSkullbot/CustomXIVCombo",
   "Punchline": "PvP, but in PvE!",
   "Tags": [ "Combo", "XIVCombo", "pcombo" ],
   "DalamudApiLevel": 15,
